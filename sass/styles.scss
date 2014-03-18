@@ -1,0 +1,102 @@
+// customize bootstrap variables here:
+@import "variables";
+@import "bootstrap";
+
+.side{}
+
+img{
+	float:left;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+ul, li{
+	margin-left: 0; 
+	padding-left: 0;
+}
+
+li{
+	margin-bottom: 1em;
+	list-style-type: none;
+}
+
+ul.sublist li{
+	margin-top: 1em;
+	margin-left: 0em;
+}
+
+.lead{margin-top: .5em;}
+
+section{padding-top: 1em}
+
+.sidenav{
+	ul li{
+		margin-bottom: 0;
+		a {
+			padding:5px 7px;
+			border-left: 2px solid transparent;
+				&:hover {
+					/* background: none; */
+					border-left: 2px solid gold;			
+				}
+				&:active{
+					border-left: 2px solid goldenrod;
+				}
+		}
+	}
+}
+
+/*
+a.breadth{
+	color: gray;
+}
+
+a.ccc{
+	color: #000;
+}
+
+a.sxu{
+	color:#890000
+}
+*/
+
+
+ul li.active a{
+		border-left: 2px solid goldenrod;
+		font-weight: bold;
+}
+
+
+.title{
+	position: block;
+	@media (min-width: 768px) {
+	 	position: fixed
+	}
+}
+
+.speak{
+	padding:5px;
+	border:1px solid lightgray;
+	border-radius:5px;
+}
+
+.logo88{
+	border:8px solid black;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+    text-align: center;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
