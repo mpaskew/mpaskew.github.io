@@ -203,7 +203,7 @@
 
 
                 <section id="spr2013">
-                    <h4>UWW: Spring 2013</h4>
+                    <h4>University Without Walls: Spring 2013</h4>
 
                     <ul>
                         <li><img src="images/22-laws.jpg" alt="22-laws" width="100" height="125" class="img-thumbnail">Read <em>The 22 Immutable Laws on Branding</em> (Al Ries and Laura Ries), about the importance of branding in today&rsquo;s business landscape, as well as what makes a brand powerful, how a brand can dilute itself, and why it's important to stay with your brand rather than try and expand it.</li>
@@ -226,7 +226,7 @@
 								</section>
 
                 <section id="fall2013">
-                    <h4>UWW: Fall 2013</h4>
+                    <h4>University Without Walls: Fall 2013</h4>
 										<ul>
 
                         <li>Took CMT-310 Persuasion class at NEIU, a class focused on the role that effective communication plays in our society, it&rsquo;s ability to inform and influence on a broad scale, as well as the orchestration of effective and influential messages. <a href="links/CMTC310-Syllabus%20(Summer%202013).pdf" target="_blank" />View syllabus</a>.</li>
@@ -257,7 +257,7 @@
 								</section>
 
                 <section id="spr2014">
-                    <h4>UWW: Spring 2014</h4>
+                    <h4>University Without Walls: Spring 2014</h4>
 										<ul>
                         <li>Readings and reports around the structure of effective messaging, strategic interaction, and the use of metaphor in communication. Report <a href="" target="_blank">coming soon</a>.</li>
                         
@@ -297,6 +297,20 @@ jQuery(document).ready(function() {
         jQuery('html, body').animate({scrollTop: 0}, duration);
         return false;
     })
+});
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 500);
+        return false;
+      }
+    }
+  });
 });
 </script>
 </body>
