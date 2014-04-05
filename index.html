@@ -9,6 +9,9 @@
     	a{
 	    	cursor: pointer !important;
     	}
+    	.aloha-ui{
+	    	/* visibility: hidden; */
+    	}
     </style>
 </head>
 <a href="#" class="back-to-top"><span class="glyphicon glyphicon-chevron-up"></span><br>Top</a>
@@ -35,12 +38,13 @@
                         <li><a href="#spr2014">NEIU UWW - Spring 2014</a></li>
                     </ul>
                 </div>
-                 <button id="save">Save Changes</button>  
             </div>
         </div>
 
         <div class="row-fluid">
             <div class="side col-sm-8 col-sm-offset-4">
+                             <button id="save">Save Changes</button>  
+
                 <section id="overview">
                     <p class="lead">This is my narrative portfolio for the University Without Walls program. Where there are resources that can be linked, you will find them here. Thank you for taking the time and making the effort to review this portfolio and be a part of my advisory committee.</p>
                     <p class="lead">Starting with the "Breadth" area, which is primarily the life experiences that I hope to count toward this degree, what follows here is a list of accomplishments and achievements that will apply towards credit for graduation. I have made every effort to make this all-inclusive and relevant.</p>
@@ -465,10 +469,8 @@ if (window.location.search.indexOf('edit') > -1) {
     $("#thePortfolio").addClass("editable");
     $("#thePortfolio").contentEditable = true;
     $("#save").css( "display", "block" );
-    $(".aloha-sidebar-bar.aloha-sidebar-right").css( "display", "block");
 } else {
     $("#save").css( "display", "none" );
-    $(".aloha-sidebar-bar.aloha-sidebar-right").css( "display", "none");
 }
 </script>
 </body>
