@@ -1,0 +1,11 @@
+<div id="print">
+</div>
+<script type="text/javascript">
+var output = ''; 
+
+for (var key in localStorage) {
+  output = output+(key + ':' +localStorage[key])+'\n';
+}
+
+$('#print').html(output);
+</script>
