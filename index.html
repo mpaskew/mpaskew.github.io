@@ -41,7 +41,7 @@
                     <p class="lead">Starting with the "Breadth" area, which is primarily the life experiences that I hope to count toward this degree, what follows here is a list of accomplishments and achievements that will apply towards credit for graduation. I have made every effort to make this all-inclusive and relevant.</p>
                 </section>
                 
-								<div class="editable" contenteditable="true" id="thePortfolio"> <!-- BEGIN PORTFOLIO -->
+								<div contenteditable="false" id="thePortfolio"> <!-- BEGIN PORTFOLIO -->
 								
 									<section id="fine-human">
 	                <h4>Breadth Area: Fine Arts & Humanities</h4>
@@ -320,7 +320,7 @@ $(function() {
 </script>
 <script>
 var theContent = $('#thePortfolio');  
-  localStorage.clear();
+/*   localStorage.clear(); */
 $('#save').on('click', function(){  
     var editedContent   = theContent.html();  
     localStorage.newContent = editedContent; 
@@ -352,6 +352,17 @@ if(localStorage.getItem('newContent')) {
               var $ = Aloha.jQuery;
               $('.editable').aloha();
        });
+</script>
+
+<script type="text/javascript">
+if (window.location.search.indexOf('edit') > -1) {
+/*     var div = document.getElementById('thePortfolio'); */
+    $("#thePortfolio").addClass("editable");
+    $("#thePortfolio").contentEditable = true;
+    $("#save").css( "display", "block" );
+} else {
+    $("#save").css( "display", "none" );
+}
 </script>
 </body>
 </html>
