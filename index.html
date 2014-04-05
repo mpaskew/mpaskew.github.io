@@ -437,7 +437,8 @@ var theContent = $('#thePortfolio');
   localStorage.clear();
 $('#save').on('click', function(){  
     var editedContent   = theContent.html();  
-    localStorage.newContent = editedContent; 
+    localStorage.newContent = editedContent;
+    alert('saved!');
 });
   
 if(localStorage.getItem('newContent')) {  
