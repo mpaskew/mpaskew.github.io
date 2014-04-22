@@ -25,6 +25,16 @@ ul.sublist li{
 	margin-left: 0em;
 }
 
+ul.subNav{
+ 	display: none;
+ 	li{
+		display: inline;
+	}
+	@media (max-width: 768px) {
+	 	display: block;
+	}
+}
+
 .lead{margin-top: .5em;}
 
 section{padding-top: 1em}

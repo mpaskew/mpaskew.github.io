@@ -7620,30 +7620,45 @@ ul.sublist li {
 }
 
 /* line 28, ../sass/styles.scss */
+ul.subNav {
+  display: none;
+}
+/* line 30, ../sass/styles.scss */
+ul.subNav li {
+  display: inline;
+}
+@media (max-width: 768px) {
+  /* line 28, ../sass/styles.scss */
+  ul.subNav {
+    display: block;
+  }
+}
+
+/* line 38, ../sass/styles.scss */
 .lead {
   margin-top: .5em;
 }
 
-/* line 30, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 section {
   padding-top: 1em;
 }
 
-/* line 33, ../sass/styles.scss */
+/* line 43, ../sass/styles.scss */
 .sidenav ul li {
   margin-bottom: 0;
 }
-/* line 35, ../sass/styles.scss */
+/* line 45, ../sass/styles.scss */
 .sidenav ul li a {
   padding: 5px 7px;
   border-left: 2px solid transparent;
 }
-/* line 38, ../sass/styles.scss */
+/* line 48, ../sass/styles.scss */
 .sidenav ul li a:hover {
   /* background: none; */
   border-left: 2px solid gold;
 }
-/* line 42, ../sass/styles.scss */
+/* line 52, ../sass/styles.scss */
 .sidenav ul li a:active {
   border-left: 2px solid goldenrod;
 }
@@ -7661,36 +7676,36 @@ a.sxu{
 	color:#890000
 }
 */
-/* line 64, ../sass/styles.scss */
+/* line 74, ../sass/styles.scss */
 ul li.active a {
   border-left: 2px solid goldenrod;
   font-weight: bold;
 }
 
-/* line 70, ../sass/styles.scss */
+/* line 80, ../sass/styles.scss */
 .title {
   position: block;
 }
 @media (min-width: 768px) {
-  /* line 70, ../sass/styles.scss */
+  /* line 80, ../sass/styles.scss */
   .title {
     position: fixed;
   }
 }
 
-/* line 77, ../sass/styles.scss */
+/* line 87, ../sass/styles.scss */
 .speak {
   padding: 5px;
   border: 1px solid lightgray;
   border-radius: 5px;
 }
 
-/* line 83, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 .logo88 {
   border: 8px solid black;
 }
 
-/* line 87, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 .back-to-top {
   position: fixed;
   bottom: 2em;
@@ -7704,7 +7719,7 @@ ul li.active a {
   text-align: center;
 }
 
-/* line 100, ../sass/styles.scss */
+/* line 110, ../sass/styles.scss */
 .back-to-top:hover {
   background-color: rgba(135, 135, 135, 0.5);
 }
